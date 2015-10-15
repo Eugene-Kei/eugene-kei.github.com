@@ -1,0 +1,78 @@
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+/*--------- reset -----------*/
+html, body{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    background:transparent;
+}
+
+
+/*--------- body ------------*/
+body{
+    font-family: Latto, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    background-color: #282828;
+    width: 100%;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/*--------- headeer ---------*/
+.header{
+    background-color: #ffffff;
+    color: #cacaca;
+    font-size: 14px;
+    font-weight: bold;
+    height: 87px;
+    text-transform: uppercase;
+    min-width: 1170px;
+}
+ul.nav-header{
+    float: right;
+    margin-top: 35px;
+}
+ul.nav-header li{
+    display: inline;
+    padding-right: 35px;
+}
+ul.nav-header li:last-child{
+    padding-right: 5px;
+}
+.header a{
+    text-decoration: none;
+    color: #cecece;
+}
+.header a:hover{
+    color: #1abc9c;
+}
+.logo{
+    font-family: "Arial Bold", sans-serif;
+    font-size: 25px;
+    float: left;
+    padding-left: 38px;
+    margin-left: 5px;
+    background: url("../images/logo.png") no-repeat;
+    margin-top: 23px;
+    padding-top: 5px;
+    height: 36px;
+}
+
+
+/*-------- slider ------------*/
+
+.slider{
+    background-color: #8f8f8f;
+    height: 700px;
+}
