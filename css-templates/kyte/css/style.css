@@ -1,5 +1,5 @@
 
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,700);
 
 /*--------- reset -----------*/
 html, body{
@@ -14,7 +14,7 @@ html, body{
 
 /*--------- body ------------*/
 body{
-    font-family: Latto, sans-serif;
+    font-family: Lato, sans-serif;
     font-weight: normal;
     font-style: normal;
     background-color: #282828;
@@ -75,4 +75,99 @@ ul.nav-header li:last-child{
 .slider{
     background-color: #8f8f8f;
     height: 700px;
+    overflow: hidden;
+    min-width: 1170px;
+}
+.slider ul{
+    margin: 0;
+    padding: 0;
+}
+.slider-item{
+    visibility: hidden;
+    position: relative;
+}
+.slider-item.active{
+    visibility: visible;
+}
+.slider-bg-img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -20px;
+    margin: auto;
+}
+.slider-title{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 700;
+    top: 205px;
+}
+.slider-desc{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;
+    top: 345px;
+}
+.slider-title>span, .slider-desc>span{
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding-left: 18px;
+    padding-right: 18px;
+    text-transform: uppercase;
+}
+.slider-title>span{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.slider-desc>span{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.slider-social{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 430px;
+}
+.slider ul.social>li {
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.4);
+    font-size: 32px;
+    line-height: 1.55;
+    color: white;
+    display: inline-block;
+    margin-right: 5px;
+    text-align: center;
+}
+.slider ul.social>li>a{
+    color: white;
+}
+.slider ul.social li:last-child{
+    margin-right: 0;
+}
+
+/*---------- about -----------*/
+
+.section-head{
+    background: #1abc9c;
+    color: white;
+    height: 90px;
+}
+.section-head h2{
+    margin: 0;
+    font-size: 25px;
+    padding-top: 30px;
+}
+.arrow-top{
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #1abc9c;
+    margin-top: 30px;
+    margin-left: 60px;
 }
