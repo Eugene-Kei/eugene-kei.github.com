@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.8/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.8/slick-theme.css"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
     <title>Kyte template</title>
@@ -25,22 +27,36 @@
     </div>
 </header>
 <section class="slider">
-    <ul>
-        <li class="slider-item  active"><img src="images/slider1.jpg" alt="" class="slider-bg-img">
+    <div id="slider">
+                <div class="slider-item  active glide__slide"><img src="images/slider1.jpg" alt="" class="slider-bg-img">
 
-            <div class="slider-title"><span>I’m Kyte Brooten</span></div>
+                    <div class="slider-title"><span>I’m Kyte Brooten</span></div>
 
-            <div class="slider-desc"><span>Frelance Photographer</span></div>
-            <div class="slider-social">
-                <ul class="social">
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                    <li><a href="#"><i class="fa fa-paper-plane-o"></i></a></li>
-                </ul>
-            </div>
-        </li>
-    </ul>
+                    <div class="slider-desc"><span>Frelance Photographer</span></div>
+                    <div class="slider-social">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fa fa-paper-plane-o"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slider-item  active glide__slide"><img src="images/slider1.jpg" alt="" class="slider-bg-img">
+
+                    <div class="slider-title"><span>I’m Kyte Brooten</span></div>
+
+                    <div class="slider-desc"><span>Frelance Photographer</span></div>
+                    <div class="slider-social">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fa fa-paper-plane-o"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+    </div>
 </section>
 <section id="about" class="bg-white">
     <div class="section-head">
@@ -52,7 +68,7 @@
     </div>
     <div class="section-body container">
         <div class="about-top-block">
-            <div class="about-image wow slideInLeft"  data-wow-offset="150">
+            <div class="about-image wow slideInLeft" data-wow-offset="150">
                 <img src="images/ceo.jpg" alt="" class="round-image">
             </div>
             <div class="about-desc">
@@ -118,10 +134,13 @@
             dapibus posuere velit aliquet.</p>
 
     </div>
-    <div class="gallery-block">
-        <img class="image-1" src="images/mul-1.jpg" alt="">
-        <img class="image-2" src="images/mul-2.jpg" alt="">
-        <img class="image-1" src="images/mul-1.jpg" alt="">
+    <div id="slick-one" class="gallery-block">
+        <img src="http://placehold.it/682x600/808/000/" alt="">
+        <img src="http://placehold.it/498x600/66ff00/000/" alt="">
+        <img src="http://placehold.it/498x600/33ff55/000/" alt="">
+        <img src="http://placehold.it/438x600/33ff55/000/" alt="">
+        <img src="http://placehold.it/512x600/33ff55/000/" alt="">
+        <img src="http://placehold.it/700x600/33ff55/000/" alt="">
     </div>
     <div class="section-body container text-white">
         <h4>Black &amp; white</h4>
@@ -130,10 +149,13 @@
             mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
 
     </div>
-    <div class="gallery-block">
-        <img class="image-2" src="images/mul-2.jpg" alt="">
-        <img class="image-1" src="images/mul-1.jpg" alt="">
-        <img class="image-1" src="images/mul-1.jpg" alt="">
+    <div id="slick-two" class="gallery-block">
+        <img src="http://placehold.it/782x900/808/000/" alt="">
+        <img src="http://placehold.it/498x420/66ff00/000/" alt="">
+        <img src="http://placehold.it/498x600/33ff55/000/" alt="">
+        <img src="http://placehold.it/682x600/808/000/" alt="">
+        <img src="http://placehold.it/498x600/66ff00/000/" alt="">
+        <img src="http://placehold.it/498x600/33ff55/000/" alt="">
     </div>
 </section>
 <section id="journal" class="bg-white-smoke">
@@ -146,7 +168,8 @@
     </div>
     <div class="section-body">
         <div class="container">
-            <article class="post-item bg-white"><div class="img"><img src="images/post.jpg" alt="" class="post-img"></div>
+            <article class="post-item bg-white">
+                <div class="img"><img src="http://placehold.it/565x280/9b59b6/000/?text=POST+IMAGE+565x280" alt="" class="post-img"></div>
 
                 <div class="pub-info">
                     <time datetime="2015-10-22T00:00">22 october 2015 00:00</time>
@@ -163,7 +186,8 @@
                     </p>
                 </div>
             </article>
-            <article class="post-item bg-white"><div class="img"><img src="images/post.jpg" alt="" class="post-img"></div>
+            <article class="post-item bg-white">
+                <div class="img"><img src="http://placehold.it/565x280/FA6900/000/?text=POST+IMAGE+565x280" alt="" class="post-img"></div>
 
                 <div class="pub-info">
                     <time datetime="2015-10-22T00:00">22 october 2015 00:00</time>
@@ -180,7 +204,8 @@
                     </p>
                 </div>
             </article>
-            <article class="post-item bg-white"><div class="img"><img src="images/post.jpg" alt="" class="post-img"></div>
+            <article class="post-item bg-white">
+                <div class="img"><img src="http://placehold.it/565x280/28ABE3/000/?text=POST+IMAGE+565x280" alt="" class="post-img"></div>
 
                 <div class="pub-info">
                     <time datetime="2015-10-22T00:00">22 october 2015 00:00</time>
@@ -197,7 +222,8 @@
                     </p>
                 </div>
             </article>
-            <article class="post-item bg-white"><div class="img"><img src="images/post.jpg" alt="" class="post-img"></div>
+            <article class="post-item bg-white">
+                <div class="img"><img src="http://placehold.it/565x280/72bf48/000/?text=POST+IMAGE+565x280" alt="" class="post-img"></div>
 
                 <div class="pub-info">
                     <time datetime="2015-10-22T00:00">22 october 2015 00:00</time>
@@ -240,17 +266,18 @@
                 <p>Fusce dapibus, tellus commodo, tortor mauris condimentum utellus fermentum, porta sem malesuada
                     magna. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia.</p>
 
-                <p class="top50px"><i class="fa fa-map-marker"></i>Moonshine Street No: 14/05</p>
+                <p class="top50px"><i class="fa fa-map-marker"></i>Moonshine Street No: 14/05 Light City, Jupiter</p>
 
-                <p><i class="fa fa-phone"></i>Light City, Jupiter</p>
+                <p><i class="fa fa-phone"></i>0247 541 65 87</p>
 
-                <p><i class="fa fa-envelope"></i>0247 541 65 87</p>
+                <p><i class="fa fa-envelope"></i>support@example.com</p>
             </div>
         </div>
     </div>
 </section>
 <section id="footer" class="bg-white">
     <p class="copy">&copy; 2013 Kyte. All rights reserved. Theme by elemis.</p>
+
     <div>
         <ul class="social">
             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -261,8 +288,32 @@
     </div>
 </section>
 <script src="js/wow.min.js"></script>
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.8/slick.min.js"></script>
 <script>
     new WOW().init();
+    $("#slider").slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true
+    });
+    $("#slick-one").slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true
+    });
+    $("#slick-two").slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true
+    });
 </script>
 </body>
-</html>
