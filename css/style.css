@@ -206,6 +206,14 @@ nav.navbar:not(.navbar-inverse) a{
     background-color: #eee;
     padding: 36px;
 }
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    overflow: hidden;
+}
 .portfolio-item{
     border: #646464 1px solid;
     margin-bottom: 26px;
